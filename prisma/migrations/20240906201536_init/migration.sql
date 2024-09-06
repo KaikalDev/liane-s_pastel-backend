@@ -1,15 +1,6 @@
-/*
-  Warnings:
-
-  - You are about to drop the `pedidos` table. If the table is not empty, all the data it contains will be lost.
-
-*/
--- DropTable
-DROP TABLE "pedidos";
-
 -- CreateTable
 CREATE TABLE "pedido" (
-    "id_pedido" TEXT NOT NULL,
+    "id_pedido" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
     "total" DOUBLE PRECISION NOT NULL,
     "payment" TEXT NOT NULL,
@@ -20,6 +11,3 @@ CREATE TABLE "pedido" (
 
     CONSTRAINT "pedido_pkey" PRIMARY KEY ("id_pedido")
 );
-
--- CreateIndex
-CREATE UNIQUE INDEX "pedido_sabores_id_key" ON "pedido"("sabores_id");
