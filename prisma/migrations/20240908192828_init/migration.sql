@@ -4,6 +4,7 @@ CREATE TABLE "pedido" (
     "name" TEXT NOT NULL,
     "total" DOUBLE PRECISION NOT NULL,
     "payment" TEXT NOT NULL,
+    "cash" DOUBLE PRECISION,
     "address" TEXT NOT NULL,
     "phoneNumber" TEXT NOT NULL,
     "date" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,

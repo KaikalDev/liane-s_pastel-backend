@@ -18,6 +18,7 @@ model Pedido {
   name           String 
   total          Float
   payment        String
+  cash           Float?
   address        String
   phoneNumber    String
   date           DateTime  @default(now())
