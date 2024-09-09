@@ -21,6 +21,7 @@ model Pedido {
   cash           Float?
   address        String
   phoneNumber    String
+  emAbertos      Boolean
   date           DateTime  @default(now())
   sabores_id     String[]
 
