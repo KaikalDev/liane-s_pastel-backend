@@ -6,7 +6,7 @@ export const create = async (req, res) => {
         await pedidoValidation.validate(req.body)
 
         const pedido = await createPedido(req.body)
-        res.status(200).send(pedido)
+        res.status(200).send({id: pedido.id_pedido})
     } catch (e) {
         res.status(400).send(e)
     }
